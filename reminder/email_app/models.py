@@ -14,5 +14,9 @@ class EmailAccount(models.Model):
     
     
 class GMailAccount(EmailAccount):
-    def __init__(self, _stmp_server):
-        super(smtp_server=_smtp_server)
+    def __init__(self, _login, _password):
+        self.login      =   _login
+        self.password   =   _password
+        
+        super(smtp_server="smtp.gmail.com", tcp_port=587)
+        
